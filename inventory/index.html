@@ -1,0 +1,26 @@
+<?php
+include("/mctest/inventory/php/login.php"); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+header("location:/mctest/inventory/search.html");
+}
+?>
+
+<html>
+<head>
+<title>Main Campus Inventory Database Login Page</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+<link href="/mctest/inventory/css/styles.css" type="text/css" rel="stylesheet" />
+<body>
+<h1><u>Main Campus Inventory Database Login Page:</u></h1>
+<form action="/mctest/inventory/php/login.php" method="post">
+<label>UserName :</label>
+<input id="name" name="username" placeholder="username" type="text"><br><br>
+<label>Password :</label>
+<input id="password" name="password" placeholder="**********" type="password"><br><br>
+<input name="submit" type="submit" value=" Login ">
+<span><?php echo $error; ?></span>
+</form>
+</body>
+</html>

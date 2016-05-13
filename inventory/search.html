@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Main Campus Inventory Database</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+<link href="/mctest/inventory/css/styles.css" type="text/css" rel="stylesheet" />
+<body>
+  <nav class ="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+          <div id="navbar" class="collapse navbar-collapse">
+              <u1 class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="insert.html">Insert</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="http://131.183.14.213/phpmyadmin">Database Management</a></li>
+                <li><a href="/mctest/inventory/update.html">Account Maintenance</a></li>
+                <li><a href="/mctest/inventory/php/logout.php">Logout</a></li>
+              </u1>
+          </div>
+      </div>
+    </nav>
+<h1><u>Main Campus Inventory Database Search Page:</u></h1><br><br>
+<form action="/mctest/inventory/php/search.php" method="POST">
+  Enter the building name(no spaces):<br />
+  <input name = "mytable" type="text" size="60"/>
+  <br />
+  <br>
+  Choose Search Type: <br />
+  <select name ="searchtype">
+    <option value="computertag">Computer Tag</option>
+    <option value="room">Room Number</option>
+    <option value="user">User</option>
+    <option value="department">Department</option>
+    <option value="manufacturer">Manufacturer</option>
+    <option value="model">Model Number</option>
+  </select>
+  <br><br>
+  Enter Search Term:<br />
+  <input name="searchterm" type="text" size="60"/>
+  <br />
+  <br>
+  <input type="submit" name="submit" value="Search"/>
+</form>
+</body>
+</html>

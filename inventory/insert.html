@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Main Campus Inventory Database</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+<link href="css/styles.css" type="text/css" rel="stylesheet" />
+<body>
+  <nav class ="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+          <div id="navbar" class="collapse navbar-collapse">
+              <u1 class="nav navbar-nav">
+                <li class="active"><a href="search.html">Home</a></li>
+                <li><a href="insert.html">Insert</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="http://131.183.14.213/phpmyadmin">Database Management</a></li>
+                <li><a href="/mctest/inventory/update.html">Account Maintenance</a></li>
+                <li><a href="/mctest/inventory/php/logout.php">Logout</a></li>
+              </u1>
+          </div>
+      </div>
+    </nav>
+<h1><u>Main Campus Inventory Database Insert Page:</u></h1><br>
+<p>Insert using a .CSV file.</p><br><br>
+<div class = "container">
+  <form action="/mctest/inventory/php/import.php" method="POST" enctype="multipart/form-data" name="form1" id="form1">
+  Enter the building name:<br><br>
+  <input name="mytableinsert1" type="text" size="60"/>
+  </select><br><br>
+  <input type="file" name="filename" id="filename"><br><br>
+  <input type="submit" value="Upload file" name="submit">
+ </form>
+</div>
+</body>
+</html>

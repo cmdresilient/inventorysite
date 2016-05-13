@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Main Campus Inventory Database</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+<link href="/mctest/inventory/css/styles.css" type="text/css" rel="stylesheet" />
+<body>
+  <nav class ="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+          <div id="navbar" class="collapse navbar-collapse">
+              <u1 class="nav navbar-nav">
+                <li class="active"><a href="search.html">Home</a></li>
+                <li><a href="insert.html">Insert</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="http://131.183.14.213/phpmyadmin">Database Management</a></li>
+                <li><a href="/mctest/inventory/update.html">Account Maintenance</a></li>
+                <li><a href="/mctest/inventory/php/logout.php">Logout</a></li>
+              </u1>
+          </div>
+      </div>
+    </nav>
+    <h1><u>Account Maintenance</u></h1>
+<form action="/mctest/inventory/php/update.php" method="POST">
+  Change or Update your password:
+  <br><br>Username:
+  <input name="username" type="text" size="15"/>
+  <br />
+  <br>New Password:
+  <input id="password" name="password" placeholder="**********" type="password">
+  <br><br>Confirm Password:
+  <input id="password1" name="password1" placeholder="**********" type="password">
+  <br><br>
+  <input type="submit" name="submit" value="Update"/>
+</form>
+</body>
+<html>

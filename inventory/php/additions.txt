@@ -1,0 +1,1 @@
+                <li><a href="http://localhost/phpmyadmin/db_structure.php?server=1&db=inventory&token=b3a9b69e988741c5f3c2404cbccf11cd">Database Management</a></li>
